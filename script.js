@@ -12,3 +12,14 @@ var strp3Parallax = new Parallax(btmstrp3);
 
 var btmstrp4 = document.getElementById('bottom-strp4');
 var strp4Parallax = new Parallax(btmstrp4);
+
+
+
+
+
+
+
+
+
+// Animation on Scroll
+AOS.init();
