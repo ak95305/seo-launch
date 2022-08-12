@@ -1,3 +1,4 @@
+// Parallax
 var bgscene = document.getElementById('bg-black');
 var bgparallax = new Parallax(bgscene);
 
@@ -18,8 +19,29 @@ var strp4Parallax = new Parallax(btmstrp4);
 
 
 
-
-
-
 // Animation on Scroll
 AOS.init();
+
+
+
+
+
+// Owl Carousel
+$('#partners').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
