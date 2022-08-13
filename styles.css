@@ -1005,7 +1005,7 @@ footer .list-unstyled li:not(:first-child) {
     padding: 10px;
     background-color: #eeeeee20;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 .input-email button {
     display: inline-flex;
