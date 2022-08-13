@@ -67,49 +67,44 @@ $('#partners').owlCarousel({
 
 // Stat Box
 // number count for stats, using jQuery animate
+// function isIntoView(elem) {
+//     var documentViewTop = $(window).scrollTop();
+//     var documentViewBottom = documentViewTop + $(window).height();
+
+//     var elementTop = $(elem).offset().top;
+//     var elementBottom = elementTop + $(elem).height();
+
+//     return ((elementBottom <= documentViewBottom) && (elementTop >= documentViewTop));
+// }
+// $(window).scroll(function () {
+//     if (isIntoView($('#stats'))) {
+
+//         $('.stat-box h1').each(function () {
+//             var $this = $(this),
+//                 countTo = $this.attr('stat-value');
+
+//             $({ countNum: $this.text() }).animate({
+//                 countNum: countTo
+//             },
+
+//                 {
+
+//                     duration: 2000,
+//                     easing: 'linear',
+//                     step: function () {
+//                         $this.text(Math.floor(this.countNum));
+//                     },
+//                     complete: function () {
+//                         $this.text(this.countNum);
+//                         //alert('finished');
+//                     }
+
+//                 });
+
+
+//         });
 
 
 
-
-
-function isIntoView(elem) {
-    var documentViewTop = $(window).scrollTop();
-    var documentViewBottom = documentViewTop + $(window).height();
-
-    var elementTop = $(elem).offset().top;
-    var elementBottom = elementTop + $(elem).height();
-
-    return ((elementBottom <= documentViewBottom) && (elementTop >= documentViewTop));
-}
-$(window).scroll(function () {
-    if (isIntoView($('#stats'))) {
-
-        $('.stat-box h1').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('stat-value');
-
-            $({ countNum: $this.text() }).animate({
-                countNum: countTo
-            },
-
-                {
-
-                    duration: 2000,
-                    easing: 'linear',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                        //alert('finished');
-                    }
-
-                });
-
-
-        });
-
-
-
-    }
-})
+//     }
+// })

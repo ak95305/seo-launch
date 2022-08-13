@@ -400,12 +400,12 @@ ul#scene li {
 .btmstrp2,
 .btmstrp3,
 .btmstrp4 {
-    background-image: url(assets/home-2-slide-shape-4a.png);
-    background-size: 100%;
+    background: url(assets/home-2-slide-shape-4a.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
     width: 120%;
-    height: 250px;
+    height: 200px;
     position: absolute;
     bottom: 150px;
     margin-left: -15%;
