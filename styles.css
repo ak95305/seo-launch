@@ -400,7 +400,7 @@ ul#scene li {
 .btmstrp2,
 .btmstrp3,
 .btmstrp4 {
-    background: url(assets/home-2-slide-shape-4a.png);
+    background: url(assets/layer4.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -414,21 +414,21 @@ ul#scene li {
 }
 
 .btmstrp2 {
-    background: url(assets/home-2-slide-shape-3b.png);
+    background: url(assets/layer3.png);
     z-index: 3;
     bottom: 80px;
     animation: wave 12.22222s 0.4s infinite ease;
 }
 
 .btmstrp3 {
-    background: url(assets/home-2-slide-shape-2-1.png);
+    background: url(assets/layer2.png);
     z-index: 2;
     bottom: 20px;
     animation: wave 16.22222s 0.2s infinite ease;
 }
 
 .btmstrp4 {
-    background: url(assets/home-2-slide-shape-1a.png);
+    background: url(assets/layer1.png);
     z-index: 1;
     bottom: 0;
     animation: wave 6.22222s 0.1s infinite ease;
