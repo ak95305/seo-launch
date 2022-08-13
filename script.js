@@ -1,18 +1,31 @@
-// Parallax
-var bgscene = document.getElementById('bg-black');
-var bgparallax = new Parallax(bgscene);
+let hamIcon = document.querySelector('.nav_mob_icon');
+let mobNav = document.querySelector('.mob_nav_menu');
+let closeNav = document.querySelector('.close_mob_nav');
+let navOverlay = document.querySelector('.nav-overlay');
+hamIcon.addEventListener('click', () => {
+    navOverlay.classList.add('active');
+    setTimeout(function() { 
+        mobNav.classList.add('active');
+     }, 300);
+});
+closeNav.addEventListener('click', () => {
+    navOverlay.classList.remove('active')
+    mobNav.classList.add('slide_nav');
+    setTimeout(function() { 
+        mobNav.classList.remove('active');
+        mobNav.classList.remove('slide_nav');
+     }, 500);
 
-var btmstrp1 = document.getElementById('bottom-strp1');
-var strp1Parallax = new Parallax(btmstrp1);
+});
 
-var btmstrp2 = document.getElementById('bottom-strp2');
-var strp1Parallax = new Parallax(btmstrp2);
 
-var btmstrp3 = document.getElementById('bottom-strp3');
-var strp3Parallax = new Parallax(btmstrp3);
 
-var btmstrp4 = document.getElementById('bottom-strp4');
-var strp4Parallax = new Parallax(btmstrp4);
+
+
+var scene = document.getElementById('scene');
+var Parallax = new Parallax(scene);
+
+
 
 
 
@@ -35,7 +48,7 @@ $('#partners').owlCarousel({
     dots: false,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3
