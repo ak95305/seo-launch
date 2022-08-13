@@ -188,19 +188,16 @@ header ul li a:hover{
     animation: rotate 4s ease-in infinite;
 }
 
-/* @keyframes rotate {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    50% {
-        transform: translateX(-48%);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-} */
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(-50,40%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(-50,40%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(-50,40%,0) rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(-50,40%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(-50,40%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(-50,40%,0) rotateZ(-360deg); } 
+}
 
 .hero-sec .hero-content{
     position: absolute;
